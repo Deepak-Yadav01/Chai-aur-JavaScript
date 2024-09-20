@@ -19,14 +19,15 @@ myArrowFun()
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
 // }
+// console.log(addTwo(10, 5));
 
 // imlpicit return
 
 // const addTwo = (num1, num2) => num1 + num2
-// const addTwo = (num1, num2) => num1 + num2   // jbki paranthesis  me wraped code ko return keyword nhi likhte h.
+// const addTwo = (num1, num2) => (num1 + num2 )  // jbki paranthesis  me wraped code ko return keyword nhi likhte h.
 // const addTwo = (num1, num2) => {username:"Deepak"} // undefined
-const addTwo = (num1, num2) => ({username:"Deepak"}); //{ username: 'Deepak' }
-console.log(addTwo(5, 6));
+// const addTwo = (num1, num2) => ({username:"Deepak"}); //{ username: 'Deepak' }
+// console.log(addTwo(5, 6));
 
  
 // myArray = [2, 5, 9, 3, 8]
