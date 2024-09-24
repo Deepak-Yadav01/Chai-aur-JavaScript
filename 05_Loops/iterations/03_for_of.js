@@ -1,7 +1,7 @@
-const  arr = [1, 2, 3, 4, 5]
+const  arr = [1, 2, 3, 4, "a"]
 
 for (const num of arr) {
-    // console.log(num); 
+    console.log(num);  // it gives the array values ,while for in  gives the index values
     // console.log(arr.length);
     // console.log(arr);
 }
