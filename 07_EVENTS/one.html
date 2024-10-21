@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
+    <div>
+        <!-- image from google ---
+        https://www.pexels.com/ -->
+        <ul id="images">
+            <li><img weidth="400px" height="350px" id="photoshop" src="https://images.pexels.com/photos/26898886/pexels-photo-26898886/free-photo-of-people-sitting-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="photoshop"></li>
+
+            <li><img weidth="600px" height="550" id="fort" src="https://images.pexels.com/photos/28435070/pexels-photo-28435070/free-photo-of-ancient-rock-tombs-in-dalyan-turkiye.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></li>
+
+            <li><img weidth="400px" height="350px" id="candle" src="https://images.pexels.com/photos/14497607/pexels-photo-14497607.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt=""></li>
+
+            <li><img weidth="400px" height="350px" id="forest" src="https://images.pexels.com/photos/25972482/pexels-photo-25972482/free-photo-of-green-lush-forest.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" onclick="alert('forest')"></li>
+
+            <li><img weidth="400px" height="350px" id="English" src="https://images.pexels.com/photos/2124779/pexels-photo-2124779.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+
+            <li><img weidth="400px" height="350px" id="indian" src="https://images.pexels.com/photos/2119367/pexels-photo-2119367.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+
+            <li><img weidth="400px" height="350px" id="korean" src="https://images.pexels.com/photos/1958725/pexels-photo-1958725.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+
+            <li><a href="https://www.google.com/" id="google">Google</a></li>
+
+        </ul>
+    </div>
+</body>
+<script>
+
+//learn by yourself
+//1. attachEvent()  2. jQuery - on event    (for more information if you want)
+
+//must to read
+//1. type, 2. timestamp, 3. preventDefault/defaultPrevent, 4.  target, 5. toElement, 6. srcElement, 7.currentTarget, 8. cleintX, 9. clientY, 10. offset, 11. screenX, 12. screenY
+//altkey, ctrlKey,shiftKey, KeyCode
+
+
+
+//    document.getElementById('korean').onclick = function(){
+//     alert("korean girl image")
+//    }
+
+document.getElementById('korean').addEventListener('click',function(){
+    alert('korean girl image using addEventListener')
+})
+
+// (propogation mode) -> bubbling up when  default value is false,,it means that first render indian image and then clicked inside the ul.
+
+document.getElementById('images').addEventListener('click',function(event){
+    console.log("clicked inside the ul")
+}, false)
+
+document.getElementById('indian').addEventListener('click',function(event){
+    console.log("indian image")
+    event.stopPropagation()
+}, false)
+
+// (capturing mode) -> top to ddown  when  default value is true,,it means that first render clicked inside the ul and then indian image .
+
+// document.getElementById('images').addEventListener('click',function(event){
+//     console.log("clicked inside the ul")
+// }, true)
+
+// document.getElementById('indian').addEventListener('click',function(event){
+//     console.log("indian image")
+// }, true)
+
+document.getElementById('google').addEventListener('click', function(e){
+   console.log("google click");
+   e.preventDefault()
+   e.stopPropagation()
+},false)
+
+</script>
+</html>
