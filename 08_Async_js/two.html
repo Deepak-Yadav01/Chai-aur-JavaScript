@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="str"> JavaScript with Hitesh</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+
+    // setInterval(function(){
+    //     console.log("Hello DY",Date.now());
+    // }, 3000)
+
+    const sayDate = function(str){
+        console.log("Hello DY",str,Date.now());
+    }
+    //   setInterval(sayDate,2000,'45')
+    //  clearInterval(stopInterval)
+
+    let intervalId; // Store the interval ID
+
+document.querySelector('#start').addEventListener('click', function() {
+    if (!intervalId) { // Only start if there's no existing interval
+        intervalId = setInterval(sayDate, 2000, '45');
+        console.log("STARTED");
+    }
+});
+
+document.querySelector('#stop').addEventListener('click', function() {
+    clearInterval(intervalId);
+    intervalId = null; // Reset the interval ID
+    console.log("STOPPED");
+});
+
+    
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JavaScript with Hitesh</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("DEEPAK YADAV");   
+    // },4000)
+
+    const sayHello = function(){
+        console.log("Hello DY");
+    }
+    setTimeout(sayHello, 5000) // setTimeout keval ek baar  print krta h but set interval ek enterval ke baad print krta hi jata h.
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Best JS Series"
+    }
+     const changeMe = setTimeout(changeText,6000)
+
+   document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeMe)
+    console.log("STOPPED");
+   })
+</script>
+</html>
