@@ -125,3 +125,7 @@ fetch('https://randomuser.me/api/')
     console.log(error);
     
 })
+
+
+// promise.all
+// yes this is also available, kuch reading hm khud se bhi kr le.
