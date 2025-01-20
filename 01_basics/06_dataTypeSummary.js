@@ -22,6 +22,12 @@ const anotherId = Symbol(456)
 
 console.log(id === anotherId);
 
+
+const id = Symbol.for("key");
+const anotherId = Symbol.for("key");
+
+console.log(id === anotherId); // true
+
 // 2# Reference (Non-primitive) datatype.
 
 // Array, Objects, Functons.
@@ -36,4 +42,5 @@ let myObj={
  const myFunction = function() {
     console.log("Hell world !");
     
-}        
+}    
+myFunction()    

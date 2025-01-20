@@ -1,4 +1,5 @@
-// Stack (primitive) , Heap (Non-primitive)
+// Stack ( is used for primitive dtatypes) ,'decleared variables ki copy milti h' ,
+//  Heap ( for Non-primitive), "original value ka reference milti h"
 
 let myCourseName = "java-script"
 
@@ -15,6 +16,7 @@ let userOne = {
     email: "dspyadavdeepak@gmail.com",
     myName: "Deepak Yadav",
 }
+console.log(userOne.email);
 
 let userTwo = userOne
 
