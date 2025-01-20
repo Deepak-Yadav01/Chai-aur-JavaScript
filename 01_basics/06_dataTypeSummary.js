@@ -23,10 +23,10 @@ const anotherId = Symbol(456)
 console.log(id === anotherId);
 
 
-const id = Symbol.for("key");
-const anotherId = Symbol.for("key");
+const s1 = Symbol.for("key");
+const s2 = Symbol.for("key");
 
-console.log(id === anotherId); // true
+console.log(s1 === s2); // true
 
 // 2# Reference (Non-primitive) datatype.
 
