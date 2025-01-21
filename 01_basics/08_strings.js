@@ -18,9 +18,12 @@ console.log(gameName.length);
 console.log(gameName.toUpperCase());
 console.log(gameName.charAt(4));
 console.log(gameName.indexOf("D"));
+console.log(gameName.includes('d'));
+console.log(gameName.repeat(3));
+
 
 let newString = 'priyankayadav';
-console.log(newString.substring(0,4));
+console.log(newString.substring(0,4));//last index value include nhi hogi
 
 const newString1 = gameName.substring(0,4)
 console.log(newString1);
@@ -32,6 +35,8 @@ console.log(anotherString);
 const newStringOne = "   deepak      "
 console.log(newStringOne);
 console.log(newStringOne.trim());
+console.log(newStringOne.trimStart());
+console.log(newStringOne.trimEnd());
 
 const url = "https://dy.com/deepak%20yadav"
 
@@ -41,4 +46,6 @@ console.log(url.includes("dy"));
 console.log(url.includes("mahi"));
 
 console.log(gameName.split(' '));
-
+console.log(url.split(''));
+console.log(url.split('/'));
+console.log(url.split('',10)); // seperator and limit for split
