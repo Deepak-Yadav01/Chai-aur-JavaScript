@@ -12,7 +12,7 @@ tinderUser.id = "123abc"
 tinderUser.name = "simmy"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
+console.log(tinderUser);
 
  const regularUser = {
     email: "some@gmail.com",
@@ -23,10 +23,10 @@ tinderUser.isLoggedIn = false
         }
     }
  }
-// console.log(regularUser);
-// console.log(regularUser.fullname);
-// console.log(regularUser.userfullname);// gives undefined but
-// console.log(regularUser.fullname.userfullname.firstname);
+console.log(regularUser);
+console.log(regularUser.fullname);
+console.log(regularUser.userfullname);// gives undefined but
+console.log(regularUser.fullname.userfullname.firstname);
 
 const obj1 = { 1: "a", 2: "b"}
 const obj2 = { 3: "c", 4: "d"}
@@ -34,10 +34,10 @@ const obj6 = {5: "e", 6: "f"}
 
 
 const obj3 = { obj1, obj2}
-// console.log(obj3 );
+console.log(obj3 );
 
 const obj4 = Object.assign(obj1, obj2)
-// console.log(obj4);
+console.log(obj4);
 
 const obj5 = Object.assign({}, obj1, obj2, obj6) // exactly same as object but good habit to do this type of stuff
 console.log(obj5);
@@ -55,14 +55,15 @@ const users = [
     },
     {
         P2id: "2",
-        email1: "rohitsharma264@gmail.com"
+        email2: "rohitsharma264@gmail.com"
     },
     {
         P3id: "3",
-        email1: "45rohitsharma@gmail.com"
+        email3: "45rohitsharma@gmail.com"
     },
 ]
-console.log( users[0]);
+console.log(users[0]);
+console.log(users[2].email3);
 
 console.log(tinderUser);
 
