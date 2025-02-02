@@ -27,6 +27,8 @@ const jsUser = {
 // console.log(jsUser["full name"]);
 
 // console.log(jsUser[mySymbol]);
+// console.log(typeof jsUser[mySymbol]);
+// console.log(Object.getOwnPropertySymbols(jsUser)); // Output: [ Symbol(key1) ]
 
 
 jsUser.email = "dy@google.com"
