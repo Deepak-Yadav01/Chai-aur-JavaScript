@@ -65,8 +65,8 @@ function addone(num) { // it is called function
 }
 // console.log(addone(5));
 
-console.log(addtwo(5)); //it give error because of const addtwo  method
-const addtwo = function(num) { // it is also calles function expression
+// console.log(addtwo(5)); //it give error because of const addtwo  method
+const addtwo = function(num) { // it is also called function expression
     return num + 2
 }
 // console.log(addtwo(5));
