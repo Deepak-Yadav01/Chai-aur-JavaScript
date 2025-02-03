@@ -24,6 +24,7 @@ function handleObject(anyobject) {
     
 }
 handleObject(user)
+handleObject(5)
 handleObject({})
 handleObject({
     username: "sams",
