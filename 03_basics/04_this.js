@@ -4,7 +4,9 @@ const user = {
     
     welcomeMessage: function () {
         console.log(`${this.username}, welcome to website`);// this. is used for current context, means scope ke andr ki value ko hi access krega
-        console.log(this);
+        // console.log(user);
+        // // or
+        // console.log(this);
         
     }
 
@@ -23,8 +25,8 @@ function chai() {
 chai()
 
 
-// function chai() {
-//     let username = "krishna"
-//     console.log(this.username);  // this. can not be used in any function, it gives undefined
-// }
-// chai()
+function chai() {
+    let username = "krishna"
+    console.log(this.username);  // this. can not be used in any function, it gives undefined
+}
+chai()
