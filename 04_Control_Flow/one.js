@@ -1,37 +1,39 @@
 // if
 
-// if (true) {
-//     console.log(`hello dear user`); 
-// }
+if (true) {
+    console.log(`hello dear user`); 
+}
+
+//if else
 
 const isUserLoggedIn = true
 const temperature = 41
 
-// if (temperature <= 40) {
-//     console.log('less than 50');
+if (temperature <= 40) {
+    console.log('less than 50');
     
-// }
-// else{
-//     console.log("greater than 50 ");
+}
+else{
+    console.log("greater than 50 ");
     
-// }
-// console.log("always executed code");
+}
+console.log("always executed code");
 
 // comparision operator
 // <, >, ==, <=, >=, !=, ===, !== 
 
 
-// const score = 200
+const score = 200
 
-// if (score > 100) {
-//     const power = "fly"
-//     // var power = "fly" // it does not gives any error but not recomended
-//     console.log(`user power: ${power}`);
+if (score > 100) {
+    const power = "fly"
+    // var power = "fly" // it does not gives any error but not recomended
+    console.log(`user power: ${power}`);
     
-// }
+}
 
-// // console.log(`user power: ${power}`); // gives error  becouse of functional scope
-// console.log(`user power: ${score}`);
+// console.log(`user power: ${power}`); // gives error  becouse of functional scope
+console.log(`user power: ${score}`);
 
 //implict scope
  const balance = 1000
@@ -45,20 +47,20 @@ const temperature = 41
 
 const bankBalance = 1000
 
-// if (bankBalance < 500) {
-//     console.log("less than 500");
+if (bankBalance < 500) {
+    console.log("less than 500");
     
-// }
-// else if (bankBalance < 750) {
-//     console.log("less than 750");
+}
+else if (bankBalance < 750) {
+    console.log("less than 750");
     
-// } else if (bankBalance < 900) {
-//     console.log("less than 900");
+} else if (bankBalance < 900) {
+    console.log("less than 900");
     
-// } else {
-//     console.log(" less than 1200");
+} else {
+    console.log(" less than 1200");
     
-// } 
+} 
  
 
 // website loggin condition
