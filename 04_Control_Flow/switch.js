@@ -19,7 +19,7 @@ switch (month) {
         break;
     case 2:
         console.log("febraury");
-        break;  // agr hmara case mactch kr gya aur wha break nhi likha ho to wo value agle case ko bina match kiye hi wha ke code ko execute kr deda h,,keval default case ke sath aisa nhi hota
+        break;  // agr hmara case mactch kr gya aur wha break nhi likha ho to wo value agle case ko bina match kiye hi wha ke code ko execute kr deta h,,keval default case ke sath aisa nhi hota
     case 3:
         console.log("march");
         break;
