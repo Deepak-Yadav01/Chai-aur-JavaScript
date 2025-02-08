@@ -68,7 +68,7 @@ for (let i = 1; i <= 20 ; i++) {
 for (let i = 1; i <= 20 ; i++) {
     if (i == 5) {
         console.log(`5 is Detected`);
-        continue // jo codition match ka h keval wahi line nhi chalegi baaki uske baad ke code chalenge
+        continue // jo codition match kra h keval wahi line nhi chalegi baaki uske baad ke code chalenge
     }
    console.log(`value of i is ${i}`); 
 
