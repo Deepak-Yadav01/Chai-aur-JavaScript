@@ -24,5 +24,6 @@ const emptyObject = {}
 
 if (Object.keys(emptyObject).length === 0) {
     console.log("Object is empty");
-    
+    console.log(Object.keys(emptyObject));// [] return krta h,, kisi object ko hm aise array datatypes me convert kr skte h  
 }
+console.log(Object.keys(emptyObject))
